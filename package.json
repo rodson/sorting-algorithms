@@ -1,0 +1,25 @@
+{
+  "name": "sorting-algorithms",
+  "version": "1.0.0",
+  "description": "common sorting algorithms implemented by javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodson/sorting-algorithms.git"
+  },
+  "keywords": [],
+  "author": "rodson <rodsonluo@gmail.com> (http://www.rodsonluo.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodson/sorting-algorithms/issues"
+  },
+  "homepage": "https://github.com/rodson/sorting-algorithms#readme",
+  "devDependencies": {
+    "babel-core": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "lodash": "^3.10.1"
+  }
+}
