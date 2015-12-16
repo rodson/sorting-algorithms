@@ -9,9 +9,7 @@ export const selectionSort = (input) => {
       }
     }
     if (i !== minIndex) {
-      let temp = output[i];
-      output[i] = output[minIndex];
-      output[minIndex] = temp;
+      [output[i], output[minIndex]] = [output[minIndex], output[i]];
     }
   }
   return output;

@@ -11,9 +11,7 @@ export const shellSort = (input) => {
     for (let i = 1; i < length; i++) {
       for (let j = i; j >= step; j = j - step) {
         if (output[j] < output[j - step]) {
-          let temp = output[j];
-          output[j] = output[j - step];
-          output[j - step] = temp
+          [output[j - 1], output[j]] = [output[j], output[j - 1]];
         } else {
           break;
         }

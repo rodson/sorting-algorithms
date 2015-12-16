@@ -8,9 +8,7 @@ export const bubbleSort = (input) => {
     for (let j = 1; j <= i; j++) {
       if (output[j - 1] > output[j]) {
         swapped = true;
-        let temp = output[j];
-        output[j] = output[j - 1];
-        output[j - 1] = temp;
+        [output[j - 1], output[j]] = [output[j], output[j - 1]];
       }
     }
 
