@@ -1,6 +1,5 @@
-export const shellSort = (input) => {
-  let output = input.slice();
-  const length = output.length;
+export const shellSort = (arr) => {
+  const length = arr.length;
   let step = 1;
 
   while (step < Math.floor(length / 3)) {
@@ -10,8 +9,8 @@ export const shellSort = (input) => {
   while (step >= 1) {
     for (let i = 1; i < length; i++) {
       for (let j = i; j >= step; j = j - step) {
-        if (output[j] < output[j - step]) {
-          [output[j - 1], output[j]] = [output[j], output[j - 1]];
+        if (arr[j] < arr[j - step]) {
+          [arr[j - 1], arr[j]] = [arr[j], arr[j - 1]];
         } else {
           break;
         }
@@ -21,5 +20,5 @@ export const shellSort = (input) => {
     step = Math.floor(step / 3);
   }
 
-  return output;
+  return arr;
 };

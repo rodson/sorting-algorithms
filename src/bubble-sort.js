@@ -1,14 +1,13 @@
-export const bubbleSort = (input) => {
-  let output = input.slice();
-  const length = output.length;
+export const bubbleSort = (arr) => {
+  const length = arr.length;
 
   for (let i = length - 1; i > 0; i--) {
     let swapped = false;
 
     for (let j = 1; j <= i; j++) {
-      if (output[j - 1] > output[j]) {
+      if (arr[j - 1] > arr[j]) {
         swapped = true;
-        [output[j - 1], output[j]] = [output[j], output[j - 1]];
+        [arr[j - 1], arr[j]] = [arr[j], arr[j - 1]];
       }
     }
 
@@ -17,5 +16,5 @@ export const bubbleSort = (input) => {
     }
   }
 
-  return output;
+  return arr;
 };
